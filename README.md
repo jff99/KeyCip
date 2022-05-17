@@ -97,23 +97,25 @@ So, if there is already a solution, what is the purpose of this application? Fir
 
 Still, some concepts to learn:
 
-### What does encrypting mean?
 
-To encrypt a text, photo, video or document means to hide its content so that only a specific person can know this information, thus ensuring that when the encrypted text, photo, video or document is sent, its content remains confidential.
+- ### What does encrypting mean?
 
-### What does decrypting mean?
+  <strong>Encrypting</strong> a text, photo, video or document means to hide its content so that only a specific person can know this information, thus ensuring that when the encrypted text, photo, video or document is sent, its content remains confidential.
 
-Decrypting a text, photo, video or document is the reverse of encrypting, in other words, the original content is returned to the encrypted file by a certain process.
+- ### What does decrypting mean?
 
-### What does signing mean?
+  <strong>Decrypting</strong> a text, photo, video or document is the reverse of encrypting, in other words, the original content is returned to the encrypted file by a certain process.
 
-Signing a text, photograph, video or document is similar to signing a letter. The content of the text or file is not changed or hidden but allows the recipient to confirm that the person who sent it to them is indeed the person they claim to be.
+- ### What does signing mean?
 
-Again, the application will guide you through the whole process. In addition, you can also visit our Youtube channel where you will find guides, in case you have any doubts. 
+  <strong>Signing</strong> a text, photograph, video or document is similar to signing a letter. The content of the text or file is not changed or hidden but allows the recipient to confirm that the person who sent it to them is indeed the person they claim to be.
+
+
+The application will guide you through the whole process. In addition, you can also visit our Youtube channel where you will find guides, in case you have any doubts. 
 
 Wait, we have one last surprise. KeyCip has its own keyboard with which text encryption and decryption operations can be used from any application. This way, you can have a private conversation with your friend, partner or family member without even leaving the social network or instant messaging application you are using.
 
-All of this is part of a Polytechnic University of Madrid, which has been developped by Jorge Fernández Fonseca in collaboration with Sergio Ríos Aguilar
+<strong>All of this is part of a Polytechnic University of Madrid, which has been developped by Jorge Fernández Fonseca in collaboration with Sergio Ríos Aguilar</strong>
 
 
 ![Tutorial Screen](images/tutorial.gif)
@@ -273,6 +275,9 @@ Reddit page: [https://www.reddit.com/r/KeyCip/](https://github.com/jff99/KeyCip)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<img align = "middle" src="images/Banner Youtube.jpg" >
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -287,12 +292,12 @@ Reddit page: [https://www.reddit.com/r/KeyCip/](https://github.com/jff99/KeyCip)
 [issues-url]: https://github.com/jff99/KeyCip//issues
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
 [license-url]: https://github.com/jff99/KeyCip//blob/master/LICENSE.txt
-[twitter-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[twitter-shield]: https://img.shields.io/twitter/follow/KEyCipApp?style=social
 [twitter-url]: https://twitter.com/KeyCipApp
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jorge-fern%C3%A1ndez-fonseca/
 [product-screenshot]: images/screenshot.png
-[youtube-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[youtube-shield]: https://img.shields.io/youtube/channel/subscribers/UCqvsnBVY6Gwq5VKuy6NfLGQ?style=social
 [youtube-url]: https://www.youtube.com/channel/UCqvsnBVY6Gwq5VKuy6NfLGQ
-[reddit-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[reddit-shield]: https://img.shields.io/reddit/subreddit-subscribers/KeyCIp?style=social
 [reddit-url]: https://www.reddit.com/r/KeyCip/
