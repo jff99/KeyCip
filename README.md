@@ -97,14 +97,17 @@ So, if there is already a solution, what is the purpose of this application? Fir
 
 Still, some concepts to learn:
 
-  -<strong>What does encrypt mean?</strong>
-  To encrypt a text, photo, video or document means to hide its content so that only a specific person can know this information, thus ensuring that when the encrypted text, photo, video or document is sent, its content remains confidential.
+### What does encrypting mean?
 
-  -<strong>What does decryption mean?</strong>
-  Decrypting a text, photo, video or document is the reverse of encrypting, in other words, the original content is returned to the encrypted file by a certain process.
+To encrypt a text, photo, video or document means to hide its content so that only a specific person can know this information, thus ensuring that when the encrypted text, photo, video or document is sent, its content remains confidential.
 
-  -<strong>What does it mean to sign?</strong>
-  Signing a text, photograph, video or document is similar to signing a letter. The content of the text or file is not changed or hidden but allows the recipient to confirm that the person who sent it to them is indeed the person they claim to be.
+### What does decrypting mean?
+
+Decrypting a text, photo, video or document is the reverse of encrypting, in other words, the original content is returned to the encrypted file by a certain process.
+
+### What does signing mean?
+
+Signing a text, photograph, video or document is similar to signing a letter. The content of the text or file is not changed or hidden but allows the recipient to confirm that the person who sent it to them is indeed the person they claim to be.
 
 Again, the application will guide you through the whole process. In addition, you can also visit our Youtube channel where you will find guides, in case you have any doubts. 
 
@@ -119,11 +122,17 @@ All of this is part of a Polytechnic University of Madrid, which has been develo
 []() 
 []() 
 []() 
+[]()
+[]() 
+[]() 
 []() 
 ![Operation example](images/operationExample.gif)
 []() 
 []() 
 []()
+[]() 
+[]() 
+[]() 
 []() 
 []() 
 []() 
@@ -149,7 +158,7 @@ All of this is part of a Polytechnic University of Madrid, which has been develo
 ## Getting Started
 
 ### Prerequisites
-The app has been developped for Android SDK 24 to Android SDK 31. Just make sure to install those SDK in your computer and you are good to go. Android Studio makes everython easier [Android Studio](https://developer.android.com/studio)
+The app has been developped for Android SDK 24 to Android SDK 31. Just make sure to install those SDK in your computer and you are good to go. Android Studio makes everything easier [Android Studio](https://developer.android.com/studio)
 
 ### Installation
 
@@ -166,12 +175,12 @@ The app has been developped for Android SDK 24 to Android SDK 31. Just make sure
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-You might feel overwhelmed by the quantity of classes and xml included within the app (I know it, my mind is caotic). In order to make you understand the project easily, we have prepared some diagrams, which shows how the differente classes are related 
+You might feel overwhelmed by the quantity of classes and xml included within the app (I know it, my mind is caotic). In order to help you understand the project, we have prepared some diagrams, which shows how the differente classes are related 
 
-<img src="images/Tutorial.png">
-<img src="images/MainActivity.png">
-<img src="images/Operation.png">
-<img src="images/Keyboard.png">
+<img align = "middle" src="images/Tutorial.png" >
+<img align = "middle" src="images/MainActivity.png">
+<img align = "middle" src="images/Operation.png">
+<img align = "middle" src="images/Keyboard.png">
 
 
 
