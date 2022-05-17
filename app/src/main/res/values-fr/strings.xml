@@ -1,0 +1,353 @@
+<!--
+* This XML is part of KeyCip Android app.
+* The whole open source code is available in https://github.com/jff99/KeyCip
+* Copyright (C) 2022 Jorge Fernández Fonseca
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <string name="app_name">KeyCip</string>
+
+    <!-- Strings used for welcome fragment-->
+    <string name="welcome">Bienvenue sur</string>
+    <string name="welcomeExplanation">Merci d\'avoir téléchargé <b>KeyCip</b>. Vous êtes sur le point d\'avoir un meilleur contrôle sur les informations que vous téléchargez vers différents services sur Internet.</string>
+    <string name="continueButton">Continuer</string>
+
+    <!-- Strings used for whatIs fragment-->
+    <string name="whatIS">Que fait KeyCip ?</string>
+    <string name="whatIsExplanation"><b>KeyCip</b> est une application qui vous permet de crypter et décrypter du texte, des photos, des vidéos, des documents et d\'autres fichiers. Pour ce faire, il utilise les algorithmes de chiffrement <b>RSA (principalement)</b> et <b>AES</b> (génération et gestion des jeux de clés).</string>
+    <string name="explainButton">Si vous n\'avez pas compris un concept, nous vous l\'expliquerons.</string>
+    <string name="genKeyButton">Je suis déjà familier avec les algorithmes de cryptage.</string>
+
+    <!-- Strings used for concept fragments-->
+    <!-- whatIsCipher-->
+    <string name="whatIsCipher">Que signifie le cryptage ?</string>
+    <string name="whatIsCipherExplanation"><b>Crypter</b> un texte, une photographie, une vidéo ou un document signifie cacher son contenu afin que seule une personne spécifique puisse connaître cette information. Cela garantit que lorsque le texte, la photographie, la vidéo ou le document crypté est envoyé, son contenu reste confidentiel.</string>
+
+    <!-- whatIsDecipher-->
+    <string name="whatIsDecipher">Que signifie "déchiffrer" ?</string>
+    <string name="whatIsDecipherExplanation"><b>Décrypter</b> un texte, une photographie, une vidéo ou un document est l\'inverse du cryptage. En d\'autres termes, le contenu original est restitué au fichier crypté par un certain processus.</string>
+
+    <!-- whatIsSign-->
+    <string name="whatIsSign">Qu\'est-ce que cela signifie de signer ?</string>
+    <string name="whatIsSignExplanation"><b>Signer</b> un texte, une photographie, une vidéo ou un document est similaire à la signature d\'une lettre. Le contenu du texte ou du fichier ne change pas ou n\'est pas caché mais permet au récepteur de confirmer que la personne qui l\'a envoyé est bien celle qu\'elle prétend être.</string>
+
+    <!-- signCipher-->
+    <string name="signCipher">Est-il possible de signer et de crypter en même temps ?</string>
+    <string name="signCipherExplanation">En signant et en cryptant, vous préservez la confidentialité du contenu de ce que vous envoyez, tout en donnant au destinataire la possibilité de vérifier votre identité.</string>
+
+    <!-- whatIsAlgorithm-->
+    <string name="whatIsAlgorithm">Qu\'est-ce qu\'un algorithme de cryptage ?</string>
+    <string name="whatIsAlgorithmExplanation">Un <b>algorithme de chiffrement</b> est l\'ensemble des étapes à réaliser pour chiffrer, déchiffrer ou signer un texte ou un fichier. Dans notre cas, on utilise <b>RSA</b>.</string>
+
+    <!-- whatIsPublicKey-->
+    <string name="whatIsPublicKey">Qu\'est-ce qu\'une clé publique ?</string>
+    <string name="whatIsPublicKeyExplanation">Il s\'agit de la clé que vous partagerez avec vos contacts. Lorsque l\'un d\'eux voudra vous envoyer un texte ou un fichier crypté afin que vous soyez le seul à en connaître le contenu, il utilisera cette clé pour le crypter.</string>
+
+    <!-- whatIsPrivateKey-->
+    <string name="whatIsPrivateKey">Qu\'est-ce qu\'une clé privée ?</string>
+    <string name="whatIsPrivateKeyExplanation">Avec cette clé, vous décrypterez les messages cryptés qui vous sont envoyés.</string>
+
+    <!-- location-->
+    <string name="location">Où sont stockées ces clés ?</string>
+    <string name="locationExplanation">Comme il s\'agit de clés personnelles, elles ne quitteront jamais votre téléphone, et nous n\'y avons pas accès (en fait, l\'application ne se connecte pas à l\'internet).</string>
+
+    <!-- complicated-->
+    <string name="complicated">Trop compliqué ?</string>
+    <string name="complicatedExplanation">Ne vous inquiétez pas, l\'application est simple et vous guidera tout au long du processus de <b>cryptage</b>, <b>décryptage</b> et <b>signature</b>. En outre, vous pouvez accéder à ce tutoriel chaque fois que vous souhaitez revoir des concepts.</string>
+
+    <!-- Strings used for gen Key fragment-->
+    <string name="genKey">Générer des clés publiques et privées</string>
+    <string name="genKeyExplanation"><b>Une fois que vous serez familiarisé avec le cryptage et le décryptage, vous générerez les clés pour utiliser le RSA.</b></string>
+    <string name="generateKeyButton">Générer des clés</string>
+    <string name="genKeyAuth"><b>D\'abord, un modèle numérique sera défini, qui vous sera demandé lorsque vous souhaiterez effectuer une opération de chiffrement, de déchiffrement ou de signature</b>.</string>
+    <string name="generateKeyAuthButton">Définir le modèle</string>
+
+    <!-- Strings used for insert Pin fragment-->
+    <string name="insertPin"><b>Mettre en place un modèle à cinq chiffres</b>.</string>
+    <string name="confirmPin"><b>Confirme le modèle à cinq chiffres</b>.</string>
+
+    <string name="fingerprintTitle"><b>Utiliser des méthodes d\'authentification alternatives</b>.</string>
+    <string name="fingerprintExplanatioon">Il a été détecté que vous disposez de méthodes d\'authentification alternatives (telles que l\'empreinte digitale). Voulez-vous les utiliser également ?</string>
+    <string name="errorInsertedPin">N\'oubliez pas que le code PIN inséré doit être composé de cinq chiffres.</string>
+    <string name="errorInsertedPinEmpty">Aucun code PIN n\'a été saisi</string>
+    <string name="errorInsertedPinDifferent">Le PIN ne correspond pas</string>
+
+    <!-- Strings used for insert Name fragment-->
+    <string name="insertName"><b>Définissez le nom auquel vos clés seront associées</b>.</string>
+    <string name="errorInsertedNameEmpty">Le nom ne peut pas être vide</string>
+
+    <!-- Strings used for loading generating fragment-->
+    <string name="loadingGenKey"><b>Les clés publiques et privées sont en cours de génération. Cela peut prendre quelques secondes</b></string>
+
+    <!-- Strings used for loading share key fragment-->
+    <string name="shareKeyTitle"><b>Génération de clés publiques et privées</b>.</string>
+    <string name="shareKeyButton">Partage de clés publiques</string>
+    <string name="remindTextView"><b>N\'oubliez pas que pour que vos contacts puissent crypter ou décrypter, ils doivent télécharger l\'application.</b></string>
+    <string name="shareInvitationButton">Envoyer une invitation à télécharger l\'application</string>
+    <string name="shareKeyDialog">Partager votre clé publique</string>
+    <string name="shareContactKeyDialog">Partager la clé publique de</string>
+    <string name="shareDownloadDialog">Il ne vous reste plus qu\'un téléchargement à effectuer pour pouvoir contrôler qui a accès aux informations que vous téléchargez vers différents services sur l\'internet. Téléchargez KeyCip sur <a>https://developer.android.com/training/sharing/send</a></string>
+
+    <!-- Strings used for granting permission fragment-->
+    <string name="grantPermissionTitle"><b>Permis</b>.</string>
+    <string name="grantPermissionExplanation">Vous devez nous accorder l\'autorisation d\'accéder au stockage interne lorsque vous avez besoin de crypter et non de décrypter des fichiers.</string>
+    <string name="grantPermissionButton">Accorder des autorisations</string>
+    <string name="grantPermissionSuccessful">Permis accordés</string>
+    <string name="grantPermissionNotSuccessful">Sans accès au stockage interne, vous ne pourrez pas crypter/décrypter ou signer des fichiers ou des photos/vidéos.</string>
+    <string name="grantPermissionNotFirstTime">Vous devez accorder des permissions manuellement</string>
+
+    <!-- Strings used for granting permission keyboard fragment-->
+    <string name="grantPermissionKeyboardTitle"><b>Permis</b>.</string>
+    <string name="grantPermissionKeyboardExplanation">Toutes les fonctions de l\'application sont disponibles sur un clavier, de sorte que vous n\'avez pas besoin de quitter le réseau social ou l\'application dans laquelle vous vous trouvez lorsque vous souhaitez crypter ou décrypter un fichier.</string>
+    <string name="grantPermissionKeyboardButton">Définir KeyCip comme clavier principal</string>
+
+    <!-- Strings used for finish tutorial fragment-->
+    <string name="finishTutorialTitle"><b>Il nous a fallu du temps mais nous avons fini</b>.</string>
+
+    <!-- Strings used for generate new Key fragment-->
+    <string name="generateNewKeyTitle"><b>Générer une nouvelle paire de clés</b>.</string>
+    <string name="generateNewKeySubTitle"><b>Une nouvelle paire de clés sera générée</b>.</string>
+    <string name="generateNewKeyWarning"><b>Veuillez noter que cette opération signifie que les personnes avec lesquelles vous avez partagé votre précédente clé publique ne pourront plus l\'utiliser (et que vous devrez la partager à nouveau).</b></string>
+    <string name="confirmationText"><b>Voulez-vous continuer?</b></string>
+
+    <!-- Strings qr view fragment-->
+    <string name="qrViewTitle"><b>Partage de la clé publique</b></string>
+    <string name="qrViewExplanation">Demandez à la personne avec laquelle vous souhaitez partager votre clé publique de sélectionner l\'option "Scanner QR" après avoir appuyé sur "Ajouter un contact".</string>
+
+    <!-- Strings added key fragment-->
+    <string name="addedKeyTitle"><b>Ajouter un nouveau contact</b>.</string>
+    <string name="confirmationAddedContact">Clé publique jointe correctement</string>
+    <string name="nameAddedKey">Saisissez le nom du contact</string>
+    <string name="nameHintAddedKey">Nom du contact</string>
+
+    <!-- Individual contact info-->
+    <string name="contactInfo"><b>Informations de contact</b></string>
+    <string name="contactInfoName">Nom du contact</string>
+    <string name="contactInfoDate">Dernier jour de modification</string>
+    <string name="contactInfoQR">Clé publique</string>
+    <string name="shareKeyContact">Partage de la clé publique du contact</string>
+    <string name="editContact">Modifier le contact</string>
+    <string name="cancelContact">Supprimer le contact</string>
+    <string name="confirmationDeleteDialog">Êtes-vous sûr de vouloir supprimer le contact ?</string>
+    <string name="supportingConfirmationDeleteDialog">Si vous continuez, vous ne pourrez plus effectuer d\'opérations de cryptage ou de décryptage avec ce contact.</string>
+
+    !-- Edit contact info-->
+    <string name="changePublicKey">Changez la clé publique</string>
+    <string name="editContactConfirmation">Veux-tu partir?</string>
+    <string name="supportingEditContactConfirmation">Il y a encore des changements non sauvés qui seront perdus.</string>
+    <string name="editContactSave">Sauvegarder les changements</string>
+    <string name="editContactCancel">Annuler les changements</string>
+
+    !-- Files fragment-->
+    <string name="filesTitle">Mes archives</string>
+    <string name="messagesChip">Messages</string>
+    <string name="photosChip">Photos</string>
+    <string name="videosChip">Vidéos</string>
+    <string name="documentsChip">PDF</string>
+    <string name="otherChip">Autres fichiers</string>
+
+    !-- Settings fragment-->
+    <string name="accessButton">Autoriser le stockage interne</string>
+    <string name="tutorialButton">Voir le tutoriel avec les concepts clés</string>
+    <string name="biometricButton">Libération biométrique associée</string>
+    <string name="biometricCancelButton">Éliminer le déverrouillage</string>
+    <string name="githubExplanation">Vous pouvez visiter notre dépôt public où vous trouverez le code source de l\'application. Si vous avez une proposition, n\'hésitez pas à participer.</string>
+
+    !-- Encrypt fragment-->
+    <string name="whichOperation">Quelle opération souhaitez-vous effectuer ?</string>
+    <string name="encrypt">Cifrar</string>
+    <string name="decrypt">Déchiffrer</string>
+    <string name="sign">Signer</string>
+    <string name="signEncrypt">Cryptage et signature</string>
+    <string name="checkSign">Vérifier la signature</string>
+
+    <string name="whichKeyEncrypt">Cryptez avec votre mot de passe ou utilisez le mot de passe public d\'un de vos contacts ?</string>
+    <string name="encryptForMe">Encryptez pour moi</string>
+    <string name="encryptOther">Crypter pour quelqu\'un d\'autre</string>
+
+    <string name="whichKeySign">Vérifier la signature avec une clé spécifique ou essayer toutes les clés disponibles dans vos contacts ?</string>
+    <string name="signSpecific">Vérifier la signature en utilisant une clé spécifique</string>
+    <string name="signGeneral">Vérifier la signature en testant toutes les touches de votre répertoire téléphonique</string>
+
+    <string name="typeEncryptQuestion">Que voulez-vous chiffrer ?</string>
+    <string name="typeSignQuestion">Que voulez-vous signer ?</string>
+    <string name="typeEncryptSignQuestion">Que voulez-vous signer et crypter ?</string>
+
+    <string name="typeText">Texte</string>
+    <string name="typePhotoVideo">Photo ou vidéo</string>
+    <string name="typeFile">Autre fichier</string>
+
+    <string name="guideOperation">Le cryptage permet de masquer le contenu d\'un texte, d\'une photo ou d\'un fichier. Le décryptage permet de retrouver le contenu original du texte ou du fichier.</string>
+    <string name="guideEncrypt">Si vous composez des chiffres pour vous-même, vous serez le seul à pouvoir décrypter le contenu par la suite. Si vous composez des chiffres pour quelqu\'un d\'autre, seule la personne dont vous choisissez la clé publique à l\'étape suivante pourra le décrypter.</string>
+
+    <string name="decryptTitle">Qu\'est-ce que vous voulez déchiffrer ?</string>
+    <string name="checkSignTitle">Quel type de signature voulez-vous vérifier ?</string>
+    <string name="decryptText">Texte</string>
+    <string name="decryptZip">Fichier .zip</string>
+
+    <string name="selectContact">Sélectionnez le contact</string>
+
+    <string name="insertPinOperation">Insérer le code PIN</string>
+
+    <string name="workingOperationTitle">Nous y travaillons</string>
+    <string name="workingOperationExplanation">Nous effectuons l\'opération demandée. Cela peut prendre quelques secondes</string>
+
+    <string name="copyEncrypted">Copie du texte crypté dans le presse-papiers</string>
+    <string name="copySigned">Copie du texte signé</string>
+    <string name="copyDecrypted">Copie du texte décrypté</string>
+
+    <string name="shareEncryptedText">Partage de texte crypté</string>
+    <string name="shareEncryptedPhoto">Partage de photos ou de vidéos cryptées</string>
+    <string name="shareEncryptedFile">Partage de fichiers cryptés</string>
+
+    <string name="shareSignedText">Partager le texte signé</string>
+    <string name="shareSignedPhoto">Partager la photo la vidéo signée</string>
+    <string name="shareSignedFile">Partager le fichier signé</string>
+
+
+    <string name="openDecryptedPhoto">Ouvrir une photo ou une vidéo décryptée</string>
+    <string name="openDecryptedFile">Ouvrir le fichier décrypté</string>
+
+    <string name="newOperation">Effectuer une nouvelle opération</string>
+
+    <string name="introduceText">Entrez le texte</string>
+
+    <string name="yes">Oui</string>
+
+    <string name="addTextKeyboard">Entrez le texte à crypter/décrypter.</string>
+    <string name="operationKeyboard">Entrez le texte à crypter/décrypter.</string>
+    <string name="contactKeyboard">Sélectionnez le contact à crypter</string>
+    <string name="copyKeyboard">Copie du texte chiffré</string>
+    <string name="newOperationKeyboard">Nouvelle opération</string>
+
+    <string name="no">Non</string>
+    <string name="cancel">Annuler</string>
+    <string name="appName">KeyCip</string>
+    <string name="addContact">Ajouter un contact</string>
+    <string name="scanQR">Scanner le code QR</string>
+    <string name="addManual">Ajouter manuellement</string>
+
+    <string name="permission">Permis</string>
+    <string name="asociateBiometric">Déverrouillage biométrique associé</string>
+    <string name="tutorial">Tutoriel sur les concepts de sécurité</string>
+    <string name="github">Github</string>
+
+    <string name="introducePin">Entrez le PIN</string>
+    <string name="introduceName">Entrez le nom</string>
+
+    <string name="languageKeyboard">Langue du clavier</string>
+
+    <string name="languageSpanish">Espagnol</string>
+    <string name="languageUK">Anglais(UK)</string>
+    <string name="languageUSA">Anglais (USA)</string>
+
+    <string name="soundVibration">Son et vibration</string>
+    <string name="sound">Son lors de la pression sur le clavier</string>
+    <string name="vibration">Vibration lors de la frappe sur le clavier</string>
+
+    <string name="mainKeyboard">Définir KeyCip comme clavier principal</string>
+    <string name="tutorialYoutube">N\'oubliez pas que, sur notre chaîne Youtube, vous trouverez des tutoriels sur l\'utilisation du clavier.</string>
+    <string name="youtube">Youtube</string>
+
+    <string name="yourKeys">Vos clés</string>
+    <string name="shareKeyQR">Appuyez pour partager votre clé publique</string>
+    <string name="sendKey">Envoyez votre clé publique</string>
+    <string name="generateNewPair">Générer une nouvelle paire de clés</string>
+
+    <string name="agenda">Agenda</string>
+    <string name="seacthContact">Recherche de contacts</string>
+
+    <string name="add">Attachez</string>
+
+    <string name="title_activity_keyboard">KeyboardActivity</string>
+
+    <string name="confirmDeleteFile">Vous êtes sûr de vouloir supprimer le fichier ?</string>
+    <string name="confirmDeleteFileExplanation">Le fichier ne peut pas être récupéré à nouveau</string>
+
+    <string name="authError">Erreur d\'authentification :</string>
+    <string name="authComplete">Authentification terminée</string>
+    <string name="authFailed">Échec de l\'authentification</string>
+
+    <string name="nameLimitationSize">Le nom doit contenir au moins une lettre</string>
+    <string name="repeatedKey">Vous essayez d\'insérer un mot de passe qui est déjà attribué au contact.</string>
+    <string name="addedContact">Contact ajouté</string>
+
+    <string name="cancelScan">Scanner annulé</string>
+    <string name="scanSuccesful">Clé publique scannée avec succès, n\'oubliez pas d\'enregistrer les changements.</string>
+
+    <string name="savedContact">Contact sauvegardé</string>
+    <string name="changesNotSaved">Modifications non sauvegardées</string>
+
+    <string name="errorYourKey">Vous ne pouvez pas ajouter un contact avec votre propre mot de passe.</string>
+    <string name="errorContactKeyOne">Ne peut être ajouté, contactez</string>
+    <string name="errorContactKeyTwo">a la même clé qui lui est associée</string>
+
+    <string name="errorFormatKey">Sélectionnez une clé publique correcte (fichier avec l\'extension .cer).</string>
+    <string name="correctKeyAdded">Clé publique jointe correctement</string>
+
+    <string name="toggleLanguage">Quittez et fermez l\'application, pour enregistrer les modifications.</string>
+
+    <string name="addedFile">Fichier joint</string>
+    <string name="added">Ajouté</string>
+    <string name="addedError">Erreur lors de l\'attachement d\'un fichier</string>
+
+    <string name="copyText">Texte copié dans le presse-papiers</string>
+    <string name="congrats">Félicitations, vous avez maintenant terminé</string>
+
+    <string name="text">texte</string>
+    <string name="file">fichier</string>
+    <string name="photo">photo la vidéo</string>
+
+    <string name="errorZip">Une erreur s\'est produite, probablement le fichier zip joint n\'est pas correct.</string>
+    <string name="originalMessage">Message original :</string>
+    <string name="errorZipText">Une erreur s\'est produite, probablement le zip ou le texte joint n\'est pas correct.</string>
+
+    <string name="signError">La signature ci-jointe ne correspond à aucune d\'entre elles. L\'identité ne peut être vérifiée</string>
+    <string name="signCorrect">La signature correspond à</string>
+
+    <string name="signYourKey">la tienne</string>
+    <string name="step">Étafe</string>
+    <string name="of">depuis</string>
+
+    <string name="me">Je</string>
+
+    <string name="notVinculate">La méthode alternative de déverrouillage a été supprimée.</string>
+    <string name="configureBiometric">Configurez une méthode de déverrouillage biométrique sur votre téléphone.</string>
+
+    <string name="favouriteContact">Un contact désormais privilégié</string>
+    <string name="noFavouriteContact">Ne plus être un contact privilégié</string>
+
+    <string name="correctScan">Clé publique scannée correctement</string>
+    <string name="selectCer">Sélectionnez une clé publique correcte (fichier avec l\'extension .cer).</string>
+
+    <string name="name">Nom :</string>
+
+    <string name="incorrectQR">Le code QR scanné ne correspond pas à une clé publique correcte.</string>
+    <string name="selectAContact">Sélectionnez un contact</string>
+
+    <string name="decryptedMessage">Message décrypté (si le résultat est illisible, le message n\'est pas crypté pour vous) :</string>
+    <string name="clipBoard">Texte copié dans le presse-papiers</string>
+
+    <string name="oneCharacter">Saisissez au moins un caractère dans la zone de texte</string>
+
+    <string name="home">Home</string>
+    <string name="keyboard">Clavier</string>
+    <string name="operation">Opération</string>
+    <string name="files">Enregistrements</string>
+    <string name="settings">Réglages</string>
+
+    <string name="your"> </string>
+
+</resources>

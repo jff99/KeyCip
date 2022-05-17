@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* This XML is part of KeyCip Android app.
+* The whole open source code is available in https://github.com/jff99/KeyCip
+* Copyright (C) 2022 Jorge Fernández Fonseca
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/introduceTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/addTextKeyboard"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/introduceText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <EditText
+        android:id="@+id/introduceText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#515151"
+        android:hint="@string/introduceText"
+        android:maxHeight="80dp"
+        android:onClick="showKeyboard"
+        android:padding="10dp"
+        android:shadowColor="#C59505"
+        android:textColor="@color/white"
+        android:textColorHighlight="#C59505"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@null"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/keyboard0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/introduceTextTitle"></EditText>
+
+    <LinearLayout
+        android:id="@+id/keyboard0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/keyboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/introduceText">
+
+        <Button
+            android:id="@+id/T1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="1"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/T2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="2"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/T3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="3"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/T4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="4"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/T5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="5"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/T6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="6"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/T7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="7"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/T8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="8"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/T9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="9"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/T0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="0"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/keyboard2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard0">
+
+        <Button
+            android:id="@+id/Q"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="Q"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/W"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="W"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/E"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="E"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/r"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="R"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/T"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="T"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/Y"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="Y"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/U"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="U"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/I"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="I"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/O"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="O"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/P"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="P"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/keyboard3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard">
+
+        <Button
+            android:id="@+id/A"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="A"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/S"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="S"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/D"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="D"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/F"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="F"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/G"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="G"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/H"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="H"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/J"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="J"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/K"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="K"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/L"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="L"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/NE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Ñ"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboard3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/keyboard4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard2"
+
+        >
+
+        <Button
+            android:id="@+id/CAPS"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:maxLines="1"
+            android:onClick="onClickButton"
+            android:padding="10dp"
+            android:text="⇪"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/Z"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="Z"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/X"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="X"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/C"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="C"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/V"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="V"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/B"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="B"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/N"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="N"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/M"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="M"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/DEL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:maxLines="1"
+            android:onClick="onClickButton"
+            android:padding="10dp"
+            android:text="⌫"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboard4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/operationTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard3">
+
+        <Button
+            android:id="@+id/TLetters"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:onClick="onClickButton"
+            android:padding="10dp"
+            android:text="!?#"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/coma"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:text=","
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/SPACE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick="onClickButton"
+            android:text="     "
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/point"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:text="."
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FABD07"
+            android:onClick="onClickButton"
+            android:text="✓"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboardSpecial0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/keyboard2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard0">
+
+        <Button
+            android:id="@+id/Tplus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="+"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/Tmult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="x"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/Tdiv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="÷"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/Tequal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="="
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="/"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TLowBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="_"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TEuro"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="€"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TPound"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="£"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TBracketOpen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="("
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TBracketClose"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text=")"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboardSpecial1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/keyboard3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard">
+
+        <Button
+            android:id="@+id/TAtSign"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="\@"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/THash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="#"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TDollar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="$"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TPercentage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="%"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TUp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="^"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TAmp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text='&amp;'
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TStar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="*"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TQuestionOpen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="¿"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TExclamationOpen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="¡"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TExclamationClose"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="!"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboardSpecial2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/keyboard4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard2"
+
+        >
+
+        <Button
+            android:id="@+id/CAPS2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:maxLines="1"
+            android:onClick="onClickButton"
+            android:padding="10dp"
+            android:text="⇪"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TScript"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="-"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TQuote"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text='"'
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TTwoPoints"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text=":"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TComaPoint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text=";"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TComa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text=","
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TQuestionMarkClosed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="\?"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/TSimpleQuote"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
+            android:text="'"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/DEL2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:maxLines="1"
+            android:onClick="onClickButton"
+            android:padding="10dp"
+            android:text="⌫"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/operationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/operationKeyboard"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/operationKeyboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard4"></TextView>
+
+
+    <RadioGroup
+        android:id="@+id/operationKeyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/contactKeyboardTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/operationTitle">
+
+        <RadioButton
+            android:id="@+id/radioEncrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:buttonTint="#FABD07"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/encrypt"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/radioDecrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FABD07"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/decrypt"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/contactKeyboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/contactKeyboard"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/spinnerContactKeyboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/operationKeyboard"></TextView>
+
+    <Spinner
+        android:id="@+id/spinnerContactKeyboard"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@id/keyboardOperationButton"
+        app:layout_constraintEnd_toEndOf="@id/operationKeyboard"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/operationKeyboard"
+        app:layout_constraintTop_toBottomOf="@id/contactKeyboardTitle"></Spinner>
+
+    <Button
+        android:id="@+id/keyboardOperationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FABD07"
+        android:onClick="onClickButtonOperation"
+        app:layout_constraintBottom_toTopOf="@id/copyTextKeyboardButton"
+        app:layout_constraintEnd_toEndOf="@id/operationKeyboard"
+        app:layout_constraintStart_toStartOf="@id/operationKeyboard"
+        app:layout_constraintTop_toBottomOf="@id/spinnerContactKeyboard"></Button>
+
+    <Button
+        android:id="@+id/copyTextKeyboardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FABD07"
+        android:onClick="onClickCopy"
+        android:text="@string/copyKeyboard"
+        app:layout_constraintBottom_toTopOf="@id/finalMessageKeyboard"
+        app:layout_constraintEnd_toEndOf="@id/operationKeyboard"
+        app:layout_constraintStart_toStartOf="@id/operationKeyboard"
+        app:layout_constraintTop_toBottomOf="@id/keyboardOperationButton"></Button>
+
+    <TextView
+        android:id="@+id/finalMessageKeyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/newOperationKeyboardButton"
+        app:layout_constraintEnd_toEndOf="@id/contactKeyboardTitle"
+        app:layout_constraintStart_toStartOf="@id/contactKeyboardTitle"
+        app:layout_constraintTop_toBottomOf="@id/copyTextKeyboardButton"></TextView>
+
+    <Button
+        android:id="@+id/newOperationKeyboardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FABD07"
+        android:onClick="onClickNewOperation"
+        android:text="@string/newOperationKeyboard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/operationKeyboard"
+        app:layout_constraintStart_toStartOf="@id/operationKeyboard"
+        app:layout_constraintTop_toBottomOf="@id/finalMessageKeyboard"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

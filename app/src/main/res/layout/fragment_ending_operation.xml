@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* This XML is part of KeyCip Android app.
+* The whole open source code is available in https://github.com/jff99/KeyCip
+* Copyright (C) 2022 Jorge Fernández Fonseca
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.operation.EndingOperationFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/allGenKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/verticalGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05"></androidx.constraintlayout.widget.Guideline>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/verticalEndGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95"></androidx.constraintlayout.widget.Guideline>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/verticalButtonGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.2"></androidx.constraintlayout.widget.Guideline>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/verticalButtonEndGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.8"></androidx.constraintlayout.widget.Guideline>
+
+            <TextView
+                android:id="@+id/finishTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="?android:title"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/finishEncryptPic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Felicidades ya se ha terminado de cifrar tu texto"></TextView>
+
+            <ImageView
+                android:id="@+id/finishEncryptPic"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/operation_celebration"
+                app:layout_constraintBottom_toTopOf="@id/finalMessage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/finishTitle"></ImageView>
+
+            <TextView
+                android:id="@+id/finalMessage"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/layout_bg"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/copyText"
+                app:layout_constraintEnd_toEndOf="@id/verticalButtonEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalButtonGuide"
+                app:layout_constraintTop_toBottomOf="@id/finishEncryptPic"></TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/copyText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#2196F3"
+                android:text="@string/copyEncrypted"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:icon="@drawable/ic_baseline_content_copy"
+                app:layout_constraintBottom_toTopOf="@+id/shareOperation"
+                app:layout_constraintEnd_toEndOf="@id/verticalButtonEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalButtonGuide"
+                app:layout_constraintTop_toBottomOf="@id/finalMessage"></com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shareOperation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#4CAF50"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:icon="@drawable/ic_baseline_share"
+                app:layout_constraintBottom_toTopOf="@+id/newOperation"
+                app:layout_constraintEnd_toEndOf="@id/verticalButtonEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalButtonGuide"
+                app:layout_constraintTop_toBottomOf="@id/copyText"
+                tools:text="@string/shareEncryptedText"></com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/newOperation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#FFC107"
+                android:text="@string/newOperation"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/commonGrey"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/verticalButtonEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalButtonGuide"
+                app:layout_constraintTop_toBottomOf="@id/shareOperation"></com.google.android.material.button.MaterialButton>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

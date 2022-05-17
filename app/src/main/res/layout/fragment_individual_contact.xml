@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* This XML is part of KeyCip Android app.
+* The whole open source code is available in https://github.com/jff99/KeyCip
+* Copyright (C) 2022 Jorge Fernández Fonseca
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.IndividualContactFragment">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/app_name"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"></ImageView>
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="?android:title"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toTopOf="@id/icon"></TextView>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/allGenKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/verticalGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05"></androidx.constraintlayout.widget.Guideline>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/verticalEndGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95"></androidx.constraintlayout.widget.Guideline>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/contactAvatar"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@color/commonGrey"
+                android:src="@drawable/ic_baseline_person_24"
+                app:layout_constraintBottom_toTopOf="@id/individualContactNameTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/individualContactNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/contactInfo"
+                android:textColor="?android:title"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/starFavourite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactAvatar"></TextView>
+
+            <ImageView
+                android:id="@+id/starFavourite"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintBottom_toTopOf="@id/individualContactName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/individualContactNameTitle"
+                app:tint="@color/orange_500"></ImageView>
+
+            <TextView
+                android:id="@+id/individualContactName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/contactInfoName"
+                android:textColor="?android:title"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/contactName"
+                app:layout_constraintEnd_toEndOf="@id/verticalEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalGuide"
+                app:layout_constraintTop_toBottomOf="@id/starFavourite"></TextView>
+
+            <TextView
+                android:id="@+id/contactName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:padding="10dp"
+                android:textColor="@color/grey"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@id/dateAddedTitle"
+                app:layout_constraintEnd_toEndOf="@id/verticalEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalGuide"
+                app:layout_constraintTop_toBottomOf="@id/individualContactName"></TextView>
+
+            <TextView
+                android:id="@+id/dateAddedTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/contactInfoDate"
+                android:textColor="?android:title"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/dateAdded"
+                app:layout_constraintEnd_toEndOf="@id/verticalEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalGuide"
+                app:layout_constraintTop_toBottomOf="@id/contactName"></TextView>
+
+            <TextView
+                android:id="@+id/dateAdded"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:padding="10dp"
+                android:textColor="@color/grey"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@id/qrTitle"
+                app:layout_constraintEnd_toEndOf="@id/verticalEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalGuide"
+                app:layout_constraintTop_toBottomOf="@id/dateAddedTitle"
+                tools:text="ejemplo de información"></TextView>
+
+            <TextView
+                android:id="@+id/qrTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/contactInfoQR"
+                android:textColor="?android:title"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/qrCode"
+                app:layout_constraintEnd_toEndOf="@id/verticalEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalGuide"
+                app:layout_constraintTop_toBottomOf="@id/dateAdded"></TextView>
+
+            <ImageView
+                android:id="@+id/qrCode"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toTopOf="@id/sharePublicKey"
+                app:layout_constraintEnd_toEndOf="@id/verticalEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalGuide"
+                app:layout_constraintTop_toBottomOf="@id/qrTitle"></ImageView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sharePublicKey"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#2196F3"
+                android:text="@string/shareKeyContact"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:icon="@drawable/ic_baseline_share"
+                app:layout_constraintBottom_toTopOf="@+id/editContactButton"
+                app:layout_constraintEnd_toEndOf="@id/verticalEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalGuide"
+                app:layout_constraintTop_toBottomOf="@id/qrCode"></com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editContactButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#4CAF50"
+                android:text="@string/editContact"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:icon="@drawable/ic_baseline_edit"
+                app:layout_constraintBottom_toTopOf="@+id/deleteButton"
+                app:layout_constraintEnd_toEndOf="@id/verticalEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalGuide"
+                app:layout_constraintTop_toBottomOf="@id/sharePublicKey"></com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/cancelContact"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:icon="@drawable/ic_baseline_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/verticalEndGuide"
+                app:layout_constraintStart_toStartOf="@id/verticalGuide"
+                app:layout_constraintTop_toBottomOf="@id/editContactButton"></com.google.android.material.button.MaterialButton>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

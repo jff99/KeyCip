@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* This XML is part of KeyCip Android app.
+* The whole open source code is available in https://github.com/jff99/KeyCip
+* Copyright (C) 2022 Jorge Fernández Fonseca
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.genkey.GenKeyExplanationFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/allGenKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/genKeyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/genKey"
+                android:textAlignment="center"
+                android:textColor="?android:title"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/genKeyPic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"></TextView>
+
+            <ImageView
+                android:id="@+id/genKeyPic"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:src="@drawable/gen_key"
+                app:layout_constraintBottom_toTopOf="@id/genKeyExplanation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/genKeyTitle"></ImageView>
+
+            <TextView
+                android:id="@+id/genKeyExplanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/genKeyExplanation"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/genKeyButton"
+                app:layout_constraintEnd_toEndOf="@id/genKeyPic"
+                app:layout_constraintStart_toStartOf="@id/genKeyPic"
+                app:layout_constraintTop_toBottomOf="@id/genKeyPic"></TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/genKeyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/generateKeyButton"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/commonGrey"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/genKeyExplanation"
+                app:layout_constraintStart_toStartOf="@id/genKeyExplanation"
+                app:layout_constraintTop_toBottomOf="@id/genKeyExplanation"></com.google.android.material.button.MaterialButton>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

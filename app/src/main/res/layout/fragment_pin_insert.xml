@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* This XML is part of KeyCip Android app.
+* The whole open source code is available in https://github.com/jff99/KeyCip
+* Copyright (C) 2022 Jorge Fernández Fonseca
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.genkey.PinInsertFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/allInsertPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/insertPinTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/genKey"
+                android:textAlignment="center"
+                android:textColor="?android:title"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/insertPinExplanation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"></TextView>
+
+            <TextView
+                android:id="@+id/insertPinExplanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/genKeyAuth"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/insertPinText"
+                app:layout_constraintEnd_toEndOf="@id/insertPinTitle"
+                app:layout_constraintStart_toStartOf="@id/insertPinTitle"
+                app:layout_constraintTop_toBottomOf="@id/insertPinTitle"></TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/insertPinText"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/introducePin"
+                android:textAlignment="center"
+                app:counterEnabled="true"
+                app:counterMaxLength="5"
+                app:endIconMode="password_toggle"
+                app:helperTextEnabled="true"
+                app:layout_constraintBottom_toTopOf="@id/insertPinButton"
+                app:layout_constraintEnd_toEndOf="@id/insertPinExplanation"
+                app:layout_constraintStart_toStartOf="@id/insertPinExplanation"
+                app:layout_constraintTop_toBottomOf="@id/insertPinExplanation"
+                app:startIconDrawable="@drawable/ic_baseline_lock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/insertPinTextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/insertPinButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/continueButton"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/commonGrey"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@id/insertPinText"
+                app:layout_constraintStart_toStartOf="@id/insertPinText"
+                app:layout_constraintTop_toBottomOf="@id/insertPinText"></com.google.android.material.button.MaterialButton>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

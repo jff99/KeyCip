@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* This XML is part of KeyCip Android app.
+* The whole open source code is available in https://github.com/jff99/KeyCip
+* Copyright (C) 2022 Jorge Fernández Fonseca
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon"
+                app:layout_constraintBottom_toTopOf="@+id/app_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"></ImageView>
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appName"
+                android:textColor="?android:title"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/questionTitle"
+                app:layout_constraintEnd_toEndOf="@id/icon"
+                app:layout_constraintStart_toStartOf="@id/icon"
+                app:layout_constraintTop_toBottomOf="@id/icon"></TextView>
+
+            <TextView
+                android:id="@+id/questionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="?android:title"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/questionExplanation"
+                app:layout_constraintEnd_toEndOf="@id/app_name"
+                app:layout_constraintStart_toStartOf="@id/app_name"
+                app:layout_constraintTop_toBottomOf="@id/app_name"></TextView>
+
+            <TextView
+                android:id="@+id/questionExplanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/questionPic"
+                app:layout_constraintEnd_toEndOf="@id/questionTitle"
+                app:layout_constraintStart_toStartOf="@id/questionTitle"
+                app:layout_constraintTop_toBottomOf="@id/questionTitle"></TextView>
+
+            <ImageView
+                android:id="@+id/questionPic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintBottom_toTopOf="@id/questionButton"
+                app:layout_constraintEnd_toEndOf="@id/questionExplanation"
+                app:layout_constraintStart_toStartOf="@id/questionExplanation"
+                app:layout_constraintTop_toBottomOf="@id/questionExplanation"></ImageView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/questionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/continueButton"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/commonGrey"
+                android:textSize="30dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/questionPic"
+                app:layout_constraintStart_toStartOf="@id/questionPic"
+                app:layout_constraintTop_toBottomOf="@id/questionPic"></com.google.android.material.button.MaterialButton>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

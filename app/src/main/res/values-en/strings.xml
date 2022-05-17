@@ -1,0 +1,353 @@
+<!--
+* This XML is part of KeyCip Android app.
+* The whole open source code is available in https://github.com/jff99/KeyCip
+* Copyright (C) 2022 Jorge Fernández Fonseca
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <string name="app_name">KeyCip</string>
+
+    <!-- Strings used for welcome fragment-->
+    <string name="welcome">Welcome</string>
+    <string name="welcomeExplanation">Thank you for downloading <b>KeyCip</b>. You are closer to having more control over the information you upload to different services on the internet.</string>
+    <string name="continueButton">Continue</string>
+
+    <!-- Strings used for whatIs fragment-->
+    <string name="whatIS">What does KeyCip?</string>
+    <string name="whatIsExplanation"><b>KeyCip</b> is an application that allows you to encrypt and decrypt text, photographs, videos, documents and other files. To do this, it uses the <b>RSA (mainly)</b> and <b>AES</b> encryption algorithms (generating and managing the sets of keys).</string>
+    <string name="explainButton">If you have not understood a concept, we will explain it to you.</string>
+    <string name="genKeyButton">I am already familiar with encryption algorithms.</string>
+
+    <!-- Strings used for concept fragments-->
+    <!-- whatIsCipher-->
+    <string name="whatIsCipher">What does encryption mean?</string>
+    <string name="whatIsCipherExplanation"><b>Encrypting</b> a text, photograph, video or document means hiding its content so that only a specific person can know that information. This ensures that when the encrypted text, photograph, video or document is sent, its content remains confidential.</string>
+
+    <!-- whatIsDecipher-->
+    <string name="whatIsDecipher">What does it mean to decrypt?</string>
+    <string name="whatIsDecipherExplanation"><b>Decrypting</b> a text, photograph, video or document is the reverse of encrypting. In other words, the original content is returned to the encrypted file by a certain process.</string>
+
+    <!-- whatIsSign-->
+    <string name="whatIsSign">What does it mean to sign?</string>
+    <string name="whatIsSignExplanation"><b>Signing</b> a text, photograph, video or document is similar to signing a letter. The content of the text or file is not changed or hidden but allows the recipient to confirm that the person who sent it is indeed the person he or she claims to be.</string>
+
+    <!-- signCipher-->
+    <string name="signCipher">Is it possible to sign and encrypt at the same time?</string>
+    <string name="signCipherExplanation">By signing and encrypting, you keep the content of what you send confidential, while giving the recipient the opportunity to verify your identity.</string>
+
+    <!-- whatIsAlgorithm-->
+    <string name="whatIsAlgorithm">What is an encryption algorithm?</string>
+    <string name="whatIsAlgorithmExplanation">An <b>encryption algorithm</b> is the set of steps that must be carried out to encrypt, decrypt or sign any text or file. In our case, <b>RSA</b> is used.</string>
+
+    <!-- whatIsPublicKey-->
+    <string name="whatIsPublicKey">What is a public key?</string>
+    <string name="whatIsPublicKeyExplanation">This is the key that you will share with your contacts. When one of them wants to send you an encrypted text or file so that only you can know the actual content, they will use this key to encrypt it.</string>
+
+    <!-- whatIsPrivateKey-->
+    <string name="whatIsPrivateKey">What is a private key?</string>
+    <string name="whatIsPrivateKeyExplanation">With this key, you will decrypt the encrypted messages sent to you.</string>
+
+    <!-- location-->
+    <string name="location">Where are these keys stored?</string>
+    <string name="locationExplanation">Because these are personal keys, they will never leave your phone, nor do we have access to them (in fact, the application does not connect to the internet).</string>
+
+    <!-- complicated-->
+    <string name="complicated">Too complicated?</string>
+    <string name="complicatedExplanation">Don\'t worry, the application is simple and will guide you through the whole process of <b>encrypting</b>, <b>decrypting</b> and <b>signing</b>. In addition, you can access this tutorial whenever you want to review concepts.</string>
+
+    <!-- Strings used for gen Key fragment-->
+    <string name="genKey">Generate public and private keys</string>
+    <string name="genKeyExplanation"><b>Once you are familiar with encryption and decryption, you will generate the keys to make use of RSA.</b></string>
+    <string name="generateKeyButton">Generate keys</string>
+    <string name="genKeyAuth"><b>First, a numerical pattern will be set and you will be prompted when you want to perform an encryption, decryption or signature operation</b>.</string>
+    <string name="generateKeyAuthButton">Set pattern</string>
+
+    <!-- Strings used for insert Pin fragment-->
+    <string name="insertPin"><b>Set a five-figure pattern</b>.</string>
+    <string name="confirmPin"><b>Confirms the five-figure pattern</b>.</string>
+
+    <string name="fingerprintTitle"><b>Use alternative authentication methods </b>.</string>
+    <string name="fingerprintExplanatioon">It has been detected that you have alternative authentication methods (such as fingerprint). Do you want to use them as well?</string>
+    <string name="errorInsertedPin">Remember that the PIN inserted must be five digits long.</string>
+    <string name="errorInsertedPinEmpty">No PIN has been entered</string>
+    <string name="errorInsertedPinDifferent">PIN does not match</string>
+
+    <!-- Strings used for insert Name fragment-->
+    <string name="insertName"><b>Set the name to which your keys will be associated</b>.</string>
+    <string name="errorInsertedNameEmpty">The name cannot be empty</string>
+
+    <!-- Strings used for loading generating fragment-->
+    <string name="loadingGenKey"><b>The public and private keys are being generated. This may take a few seconds</b></string>
+
+    <!-- Strings used for loading share key fragment-->
+    <string name="shareKeyTitle"><b>Public and private key generated</b>.</string>
+    <string name="shareKeyButton">Public key sharing</string>
+    <string name="remindTextView"><b>Remember that in order for your contacts to encrypt or decrypt, they must download the application.</b></string>
+    <string name="shareInvitationButton">Send invitation to download application</string>
+    <string name="shareKeyDialog">Sharing your public key</string>
+    <string name="shareContactKeyDialog">Sharing the public key of</string>
+    <string name="shareDownloadDialog">You are one download away from being able to control who has access to the information you upload to different services on the Internet. Download KeyCip at <a>https://developer.android.com/training/sharing/send</a></string>
+
+    <!-- Strings used for granting permission fragment-->
+    <string name="grantPermissionTitle"><b>Permits</b>.</string>
+    <string name="grantPermissionExplanation">We need you to grant us permission to internal storage when you need to encrypt, not decrypt files.</string>
+    <string name="grantPermissionButton">Granting permissions</string>
+    <string name="grantPermissionSuccessful">Permits granted</string>
+    <string name="grantPermissionNotSuccessful">Without access to internal storage, you will not be able to encrypt/decrypt or sign files or photos/videos.</string>
+    <string name="grantPermissionNotFirstTime">You must grant permissions manually</string>
+
+    <!-- Strings used for granting permission keyboard fragment-->
+    <string name="grantPermissionKeyboardTitle"><b>Permits</b>.</string>
+    <string name="grantPermissionKeyboardExplanation">All the functions of the application are available on a keyboard so that you don\'t have to leave the social network or application you are in when you want to encrypt or decrypt a file.</string>
+    <string name="grantPermissionKeyboardButton">Set KeyCip as main keypad</string>
+
+    <!-- Strings used for finish tutorial fragment-->
+    <string name="finishTutorialTitle"><b>It took us a while but we\'re done now</b>.</string>
+
+    <!-- Strings used for generate new Key fragment-->
+    <string name="generateNewKeyTitle"><b>Generate a new key pair</b>.</string>
+    <string name="generateNewKeySubTitle"><b>A new key pair is going to be generated </b>.</string>
+    <string name="generateNewKeyWarning"><b>Please note that this operation means that the people with whom you shared your previous public key will no longer be able to use it (and you will have to share it again).</b></string>
+    <string name="confirmationText"><b>Do you want to continue?</b></string>
+
+    <!-- Strings qr view fragment-->
+    <string name="qrViewTitle"><b>Sharing of public key</b></string>
+    <string name="qrViewExplanation">Ask the person you wish to share your public key with to select the "Scan QR" option after pressing "Add contact".</string>
+
+    <!-- Strings added key fragment-->
+    <string name="addedKeyTitle"><b>Add a new contact</b>.</string>
+    <string name="confirmationAddedContact">Public key attached correctly</string>
+    <string name="nameAddedKey">Enter the name of the contact</string>
+    <string name="nameHintAddedKey">Contact name</string>
+
+    <!-- Individual contact info-->
+    <string name="contactInfo"><b>Contact information</b></string>
+    <string name="contactInfoName">Contact name</string>
+    <string name="contactInfoDate">Last modification day</string>
+    <string name="contactInfoQR">Public key</string>
+    <string name="shareKeyContact">Sharing the contact\'s public key</string>
+    <string name="editContact">Edit contact</string>
+    <string name="cancelContact">Delete contact</string>
+    <string name="confirmationDeleteDialog">Are you sure you want to delete the contact?</string>
+    <string name="supportingConfirmationDeleteDialog">If you continue, you will no longer be able to perform encryption or decryption operations with this contact.</string>
+
+    !-- Edit contact info-->
+    <string name="changePublicKey">Change the public key</string>
+    <string name="editContactConfirmation">Do you want to leave?</string>
+    <string name="supportingEditContactConfirmation">There are still unsaved changes that will be lost.</string>
+    <string name="editContactSave">Save changes</string>
+    <string name="editContactCancel">Cancel changes</string>
+
+    !-- Files fragment-->
+    <string name="filesTitle">My files</string>
+    <string name="messagesChip">Messages</string>
+    <string name="photosChip">Photos</string>
+    <string name="videosChip">Videos</string>
+    <string name="documentsChip">PDF</string>
+    <string name="otherChip">Other files</string>
+
+    !-- Settings fragment-->
+    <string name="accessButton">Grant permission to internal storage</string>
+    <string name="tutorialButton">View the tutorial with the key concepts</string>
+    <string name="biometricButton">Associate biometric authentication</string>
+    <string name="biometricCancelButton">Remove biometric authentication</string>
+    <string name="githubExplanation">You can visit our public repository where you will find the source code of the application. If you have a proposal, don\'t hesitate to participate.</string>
+
+    !-- Encrypt fragment-->
+    <string name="whichOperation">What operation do you wish to perform?</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="sign">Sign</string>
+    <string name="signEncrypt">Encrypt and sign</string>
+    <string name="checkSign">Check signature</string>
+
+    <string name="whichKeyEncrypt">Encrypt with your password or use a public one from one of your contacts?</string>
+    <string name="encryptForMe">Encrypt for me</string>
+    <string name="encryptOther">Encrypt for someone else</string>
+
+    <string name="whichKeySign">Check signature with a specific key or try all available keys in your contacts?</string>
+    <string name="signSpecific">Verify signature using specific key</string>
+    <string name="signGeneral">Verify signature by testing all the keys in your phonebook</string>
+
+    <string name="typeEncryptQuestion">What do you want to encrypt?</string>
+    <string name="typeSignQuestion">What do you want to sign?</string>
+    <string name="typeEncryptSignQuestion">What do you want to sign and encrypt?</string>
+
+    <string name="typeText">Text</string>
+    <string name="typePhotoVideo">Photo or video</string>
+    <string name="typeFile">Other file</string>
+
+    <string name="guideOperation">Encrypting allows you to hide the content of the text, photograph or file.\nDecrypting returns the original content to the text or file\nSigning does not alter the file, but allows your contacts to check your identity</string>
+    <string name="guideEncrypt">If you encrypt for yourself, only you will be able to decrypt the content afterwards. \nIf you encrypt for someone else, only the person whose public key you choose in the next step will be able to decrypt it.</string>
+
+    <string name="decryptTitle">What do you want to decrypt?</string>
+    <string name="checkSignTitle">What kind of signature do you want to check?</string>
+    <string name="decryptText">Text</string>
+    <string name="decryptZip">File .zip</string>
+
+    <string name="selectContact">Select the contact</string>
+
+    <string name="insertPinOperation">Insert PIN</string>
+
+    <string name="workingOperationTitle">We are working on it</string>
+    <string name="workingOperationExplanation">We are performing the requested operation. This may take a few seconds</string>
+
+    <string name="copyEncrypted">Copy encrypted text to clipboard</string>
+    <string name="copySigned">Copy signed text</string>
+    <string name="copyDecrypted">Copy decrypted text</string>
+
+    <string name="shareEncryptedText">Share encrypted text</string>
+    <string name="shareEncryptedPhoto">Share encrypted photo or video </string>
+    <string name="shareEncryptedFile">Share encrypted file</string>
+
+    <string name="shareSignedText">Share signed text</string>
+    <string name="shareSignedPhoto">Share photo or video signed</string>
+    <string name="shareSignedFile">Share signed file</string>
+
+
+    <string name="openDecryptedPhoto">Open decrypted photo or video</string>
+    <string name="openDecryptedFile">Open decrypted file</string>
+
+    <string name="newOperation">Perform new operation</string>
+
+    <string name="introduceText">Enter text</string>
+
+    <string name="yes">Yes</string>
+
+    <string name="addTextKeyboard">Enter text to be encrypted/decrypted</string>
+    <string name="operationKeyboard">Enter text to be encrypted/decrypted</string>
+    <string name="contactKeyboard">Select the contact to encrypt</string>
+    <string name="copyKeyboard">Copy ciphertext</string>
+    <string name="newOperationKeyboard">New operation</string>
+
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="appName">KeyCip</string>
+    <string name="addContact">Add contact</string>
+    <string name="scanQR">Scan QR code</string>
+    <string name="addManual">Add manually</string>
+
+    <string name="permission">Permission</string>
+    <string name="asociateBiometric">Associate biometric authentication</string>
+    <string name="tutorial">Tutorial on security concepts</string>
+    <string name="github">Github</string>
+
+    <string name="introducePin">Enter PIN</string>
+    <string name="introduceName">Enter the name</string>
+
+    <string name="languageKeyboard">Keyboard language</string>
+
+    <string name="languageSpanish">Spanish</string>
+    <string name="languageUK">English(UK)</string>
+    <string name="languageUSA">English(USA)</string>
+
+    <string name="soundVibration">Sound and vibration</string>
+    <string name="sound">Sound when pressing on the keyboard</string>
+    <string name="vibration">Vibrate when tapping on the keyboard</string>
+
+    <string name="mainKeyboard">Set KeyCip as main keyboard</string>
+    <string name="tutorialYoutube">Remember that, on our Youtube channel, there are tutorials on how to use the keyboard.</string>
+    <string name="youtube">Youtube</string>
+
+    <string name="yourKeys">Your keys</string>
+    <string name="shareKeyQR">Touch in order to share your key</string>
+    <string name="sendKey">Send your public key</string>
+    <string name="generateNewPair">Generate a new key pair</string>
+
+    <string name="agenda">Agenda</string>
+    <string name="seacthContact">Search for contacts</string>
+
+    <string name="add">Attach</string>
+
+    <string name="title_activity_keyboard">KeyboardActivity</string>
+
+    <string name="confirmDeleteFile">Are you sure you want to delete the file?</string>
+    <string name="confirmDeleteFileExplanation">The file cannot be recovered again</string>
+
+    <string name="authError">Authentication error:</string>
+    <string name="authComplete">Authentication completed</string>
+    <string name="authFailed">Authentication failed</string>
+
+    <string name="nameLimitationSize">The name must contain at least one letter</string>
+    <string name="repeatedKey">You are trying to insert a password that is already assigned to the contact.</string>
+    <string name="addedContact">Contact added</string>
+
+    <string name="cancelScan">Scanner cancelled</string>
+    <string name="scanSuccesful">Public key scanned successfully, remember to save changes</string>
+
+    <string name="savedContact">Saved contact</string>
+    <string name="changesNotSaved">Unsaved changes</string>
+
+    <string name="errorYourKey">You cannot add a contact with your own password.</string>
+    <string name="errorContactKeyOne">Cannot be added, contact</string>
+    <string name="errorContactKeyTwo">has the same key associated with it</string>
+
+    <string name="errorFormatKey">Select a correct public key (file with .cer extension).</string>
+    <string name="correctKeyAdded">Public key attached correctly</string>
+
+    <string name="toggleLanguage">Exit and close the application, to save the changes.</string>
+
+    <string name="addedFile">Attached file</string>
+    <string name="added">Added</string>
+    <string name="addedError">Error when attaching file</string>
+
+    <string name="copyText">Text copied to clipboard</string>
+    <string name="congrats">Congratulations, you have finished</string>
+
+    <string name="text">text</string>
+    <string name="file">file</string>
+    <string name="photo">photo the video</string>
+
+    <string name="errorZip">An error has occurred, probably the attached zip file is not correct.</string>
+    <string name="originalMessage">Original message:</string>
+    <string name="errorZipText">An error has occurred, probably the zip or text attached is not correct.</string>
+
+    <string name="signError">The attached signature does not match any of them. Identity cannot be verified</string>
+    <string name="signCorrect">The signature corresponds to</string>
+
+    <string name="signYourKey">yours</string>
+    <string name="step">Step</string>
+    <string name="of">out of</string>
+
+    <string name="me">Me</string>
+
+    <string name="notVinculate">The alternative unlocking method has been de-linked.</string>
+    <string name="configureBiometric">Set up a biometric unlocking method on your phone</string>
+
+    <string name="favouriteContact">Now is a favourite contact</string>
+    <string name="noFavouriteContact">No longer a favourite contact</string>
+
+    <string name="correctScan">Public key scanned correctly</string>
+    <string name="selectCer">Select a correct public key (file with .cer extension).</string>
+
+    <string name="name">Name:</string>
+
+    <string name="incorrectQR">The scanned QR code does not correspond to a correct public key.</string>
+    <string name="selectAContact">Select a contact</string>
+
+    <string name="decryptedMessage">Decrypted message (if the result is unreadable, the message is not encrypted for you):</string>
+    <string name="clipBoard">Text copied to clipboard</string>
+
+    <string name="oneCharacter">Enter at least one character in the text box</string>
+
+    <string name="home">Home</string>
+    <string name="keyboard">Keyboard</string>
+    <string name="operation">Operation</string>
+    <string name="files">Files</string>
+    <string name="settings">Settings</string>
+
+    <string name="your">your</string>
+
+</resources>
