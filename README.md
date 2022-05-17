@@ -182,7 +182,7 @@ You might feel overwhelmed by the quantity of classes and xml included within th
 <img align = "middle" src="images/Tutorial.png" >
 <img align = "middle" src="images/MainActivity.png">
 <img align = "middle" src="images/Operation.png">
-<img align = "middle" src="images/Keyboard.png">
+<img align = "middle" src="images/Home.png">
 
 
 
