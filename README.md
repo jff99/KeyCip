@@ -192,6 +192,7 @@ You might feel overwhelmed by the quantity of classes and xml included within th
 <!-- ROADMAP -->
 ## Roadmap
 
+- [ ] Add the app to Fdroid Store
 - [ ] Add encryption and decryption of pictures and files through the keyboard (currently only text)
 - [ ] Add authentication when encrypting and decrypting through the keyboard
 - [ ] Add the possibility to open directly .zip files (instead of browsing for it)
