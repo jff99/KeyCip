@@ -27,7 +27,7 @@
     <!-- Strings used for whatIs fragment-->
     <string name="whatIS">Cosa fa KeyCip?</string>
     <string name="whatIsExplanation"><b>KeyCip</b> è un\'applicazione che consente di criptare e decriptare testo, fotografie, video, documenti e altri file. Per farlo, utilizza gli algoritmi di crittografia <b>RSA (principalmente)</b> e <b>AES</b> (generando e gestendo gli insiemi di chiavi).</string>
-    <string name="explainButton">Se non avete capito un concetto, ve lo spiegheremo.</string>
+    <string name="explainButton">Ho bisogno di aiuto?</string>
     <string name="genKeyButton">Conosco già gli algoritmi di crittografia.</string>
 
     <!-- Strings used for concept fragments-->
@@ -257,7 +257,7 @@
     <string name="sound">Suono quando si preme sulla tastiera</string>
     <string name="vibration">Vibrazione quando si tocca la tastiera</string>
 
-    <string name="mainKeyboard">Impostare KeyCip come tastiera principale</string>
+    <string name="mainKeyboard">Impostare KeyCip come tastiera </string>
     <string name="tutorialYoutube">Ricordate che sul nostro canale Youtube sono disponibili tutorial su come utilizzare la tastiera.</string>
     <string name="youtube">Youtube</string>
 
@@ -321,7 +321,7 @@
     <string name="step">Passo</string>
     <string name="of">depuis</string>
 
-    <string name="me">Je</string>
+    <string name="me">Io</string>
 
     <string name="notVinculate">Il metodo di sblocco alternativo è stato eliminato.</string>
     <string name="configureBiometric">Impostare un metodo di sblocco biometrico sul telefono</string>
@@ -349,5 +349,9 @@
     <string name="settings">Impostazioni</string>
 
     <string name="your"> </string>
+    <string name="skip">Vai a</string>
+
+    <string name="maxKeyboard">Dimensione massima del testo superata</string>
+    <string name="meContact">\"Io\" non è consentito come nome di contatto</string>
 
 </resources>

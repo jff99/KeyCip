@@ -27,7 +27,7 @@
     <!-- Strings used for whatIs fragment-->
     <string name="whatIS">¿Qué hace KeyCip?</string>
     <string name="whatIsExplanation"><b>KeyCip</b> es una aplicación que permite cifrar y descifrar tanto texto, fotografías, vídeos, documentos y otros ficheros. Para ello, hace uso del algoritmo de cifrado <b>RSA (principalmente)</b>  y <b>AES</b> (generando y gestionado el conjuntos de claves)</string>
-    <string name="explainButton">Si no has entendido algún concepto, te lo explicamos</string>
+    <string name="explainButton">¿Necesitas ayuda?</string>
     <string name="genKeyButton">Ya estoy familiarizado con algoritmos de cifrado</string>
 
     <!-- Strings used for concept fragments-->
@@ -98,7 +98,7 @@
     <string name="shareInvitationButton">Enviar invitación para descargar aplicación</string>
     <string name="shareKeyDialog">Compartiendo tu clave pública</string>
     <string name="shareContactKeyDialog">Compartiendo la clave pública de </string>
-    <string name="shareDownloadDialog">Estás a una descarga de poder controlar quién tiene acceso a la información que viertes a los distintos servicios en Internet. Decarga KeyCip \n\n<a>https://developer.android.com/training/sharing/send</a></string>
+    <string name="shareDownloadDialog">Estás a una descarga de poder controlar quién tiene acceso a la información que viertes a los distintos servicios en Internet. Descarga KeyCip \n\n<a>https://play.google.com/store/apps/details?id=jorgeff99.keymyinfo</a></string>
 
     <!-- Strings used for granting permission fragment-->
     <string name="grantPermissionTitle"><b>Permisos</b></string>
@@ -242,7 +242,7 @@
     <string name="permission">Permisos</string>
     <string name="asociateBiometric">Asociar desbloqueo biométrico</string>
     <string name="tutorial">Tutorial respecto a conceptos de seguridad</string>
-    <string name="github">Github</string>
+    <string name="github">GitHub</string>
 
     <string name="introducePin">Introduce el PIN</string>
     <string name="introduceName">Introduce el nombre</string>
@@ -257,9 +257,9 @@
     <string name="sound">Sonido al pulsar sobre el teclado</string>
     <string name="vibration">Vibrar al pulsar sobre el teclado</string>
 
-    <string name="mainKeyboard">Establecer KeyCip\ncomo teclado principal</string>
-    <string name="tutorialYoutube">Recuerda que, en nuestro canal de Youtube,existen tutoriales sobre cómo usar el teclado</string>
-    <string name="youtube">Youtube</string>
+    <string name="mainKeyboard">Establecer KeyCip\ncomo teclado </string>
+    <string name="tutorialYoutube">Recuerda que, en nuestro canal de YouTube,existen tutoriales sobre cómo usar el teclado</string>
+    <string name="youtube">YouTube</string>
 
     <string name="yourKeys">Tus claves</string>
     <string name="shareKeyQR">Toca para compartir tu clave pública</string>
@@ -349,5 +349,9 @@
     <string name="settings">Ajustes</string>
 
     <string name="your">tu</string>
+    <string name="skip">Saltar</string>
+
+    <string name="maxKeyboard">Tamaño máximo de texto superado</string>
+    <string name="meContact">\"Yo\" no está permitido como nombre de contacto</string>
 
 </resources>

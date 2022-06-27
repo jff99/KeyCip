@@ -324,7 +324,7 @@ class LoadingOperation : Fragment() {
             }
 
             file = File(requireContext().filesDir.toString() + "/files/temp/" + "signed.txt")
-            file.writeText(selectedOptionsOriginal[2].split("\n*******BEGIN SIGNED DATA*******\n")[1])
+            file.writeBytes(getDecoded(selectedOptionsOriginal[2].split("\n*******BEGIN SIGNED DATA*******\n")[1].toByteArray()))
 
             file = File(requireContext().filesDir.toString() + "/files/temp/" + "original.txt")
             file.writeText(

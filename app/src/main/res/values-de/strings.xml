@@ -27,7 +27,7 @@
     <!-- Strings used for whatIs fragment-->
     <string name="whatIS">Was macht KeyCip?</string>
     <string name="whatIsExplanation"><b>KeyCip</b> ist eine Anwendung, mit der Sie Texte, Fotos, Videos, Dokumente und andere Dateien verschlüsseln und entschlüsseln können. Dazu verwendet es die Verschlüsselungsalgorithmen <b>RSA (hauptsächlich)</b> und <b>AES</b> (Erzeugung und Verwaltung der Schlüsselsätze).</string>
-    <string name="explainButton">Wenn Sie ein Konzept nicht verstanden haben, werden wir es Ihnen erklären.</string>
+    <string name="explainButton">Brauchen Sie Hilfe?</string>
     <string name="genKeyButton">Ich bin bereits mit Verschlüsselungsalgorithmen vertraut.</string>
 
     <!-- Strings used for concept fragments-->
@@ -242,7 +242,7 @@
     <string name="permission">Erlaubt</string>
     <string name="asociateBiometric">Assoziierte biometrische Entriegelung</string>
     <string name="tutorial">Tutorial zu Sicherheitskonzepten</string>
-    <string name="github">Github</string>
+    <string name="github">GitHub</string>
 
     <string name="introducePin">PIN eingeben</string>
     <string name="introduceName">Geben Sie den Namen ein</string>
@@ -257,9 +257,9 @@
     <string name="sound">Ton beim Drücken auf der Tastatur</string>
     <string name="vibration">Vibrieren beim Tippen auf der Tastatur</string>
 
-    <string name="mainKeyboard">KeyCip als Haupttastatur einstellen</string>
-    <string name="tutorialYoutube">Denken Sie daran, dass es auf unserem Youtube-Kanal Anleitungen zur Verwendung der Tastatur gibt.</string>
-    <string name="youtube">Youtube</string>
+    <string name="mainKeyboard">KeyCip als Klaviatur einstellen</string>
+    <string name="tutorialYoutube">Denken Sie daran, dass es auf unserem YouTube-Kanal Anleitungen zur Verwendung der Tastatur gibt.</string>
+    <string name="youtube">YouTube</string>
 
     <string name="yourKeys">Ihre Schlüssel</string>
     <string name="shareKeyQR">Toca para compartir tu clave pública</string>
@@ -349,5 +349,10 @@
     <string name="settings">Einstellungen</string>
 
     <string name="your">dein</string>
+    <string name="skip">überspringen</string>
+
+    <string name="maxKeyboard">Maximale Textgröße überschritten</string>
+    <string name="meContact">\"Ich\" ist als Kontaktname nicht zulässig</string>
+
 
 </resources>

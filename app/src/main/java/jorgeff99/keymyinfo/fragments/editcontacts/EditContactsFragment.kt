@@ -167,43 +167,54 @@ class EditContactsFragment : Fragment() {
 
             var errorName = false
 
-            // Check if a new key  has been inserted
-            if (changedKey.isNotEmpty()) {
-                RSA().fromStringToPublicKey(root.context, changedKey, nameIntent!!)
-                performedChanges = true
-            }
-
-            // Check if a name has been inserted and is different to the original name
-            if (contactName.text.toString()
-                    .isNotEmpty() && contactName.text.toString() != nameIntent
-            ) {
-                // Call to changeName in order to check if the new name is correct
-                errorName = changeName(contactName.text.toString())
-                performedChanges = true
-            }
-
-            if (performedChanges) {
-                //Update the last day modified
-                val currentTime: Date = Calendar.getInstance().time
-                val formatDate: DateFormat = SimpleDateFormat("dd/MM/yyyy")
-
-                lifecycleScope.launch {
-                    //Update the information in the contact database
-                    Application.contactDatabase.getContactDao()
-                        .updateDate(
-                            formatDate.format(currentTime.time).toString(),
-                            contactName.text.toString()
-                        )
-                }
-            }
-
-            if (!errorName) {
+            if(contactName.text.toString()
+                    .isNotEmpty() && contactName.text.toString() != nameIntent && contactName.text.toString().lowercase() == context?.resources?.getString(R.string.me).toString().lowercase()){
                 Toast.makeText(
                     this.context,
-                    context?.resources?.getString(R.string.savedContact),
+                    context?.resources?.getString(R.string.meContact),
                     Toast.LENGTH_LONG
                 ).show()
-                returnHome()
+            }
+
+            else {
+                // Check if a new key  has been inserted
+                if (changedKey.isNotEmpty()) {
+                    RSA().fromStringToPublicKey(root.context, changedKey, nameIntent!!)
+                    performedChanges = true
+                }
+
+                // Check if a name has been inserted and is different to the original name
+                if (contactName.text.toString()
+                        .isNotEmpty() && contactName.text.toString() != nameIntent
+                ) {
+                    // Call to changeName in order to check if the new name is correct
+                    errorName = changeName(contactName.text.toString())
+                    performedChanges = true
+                }
+
+                if (performedChanges) {
+                    //Update the last day modified
+                    val currentTime: Date = Calendar.getInstance().time
+                    val formatDate: DateFormat = SimpleDateFormat("dd/MM/yyyy")
+
+                    lifecycleScope.launch {
+                        //Update the information in the contact database
+                        Application.contactDatabase.getContactDao()
+                            .updateDate(
+                                formatDate.format(currentTime.time).toString(),
+                                contactName.text.toString()
+                            )
+                    }
+                }
+
+                if (!errorName) {
+                    Toast.makeText(
+                        this.context,
+                        context?.resources?.getString(R.string.savedContact),
+                        Toast.LENGTH_LONG
+                    ).show()
+                    returnHome()
+                }
             }
         }
 

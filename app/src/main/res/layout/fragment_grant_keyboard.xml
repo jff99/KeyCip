@@ -76,12 +76,30 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/skipKeyboard"
                 app:layout_constraintEnd_toEndOf="@id/grantPermissionKeyboardExplanation"
                 app:layout_constraintStart_toStartOf="@id/grantPermissionKeyboardExplanation"
                 app:layout_constraintTop_toBottomOf="@id/grantPermissionKeyboardExplanation"></com.google.android.material.button.MaterialButton>
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/skipKeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#9059575C"
+                android:text="@string/skip"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/grantPermissionKeyboardExplanation"
+                app:layout_constraintStart_toStartOf="@id/grantPermissionKeyboardExplanation"
+                app:layout_constraintTop_toBottomOf="@id/grantPermissionKeyboardButton"></com.google.android.material.button.MaterialButton>
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,7 @@
     <!-- Strings used for whatIs fragment-->
     <string name="whatIS">Que fait KeyCip ?</string>
     <string name="whatIsExplanation"><b>KeyCip</b> est une application qui vous permet de crypter et décrypter du texte, des photos, des vidéos, des documents et d\'autres fichiers. Pour ce faire, il utilise les algorithmes de chiffrement <b>RSA (principalement)</b> et <b>AES</b> (génération et gestion des jeux de clés).</string>
-    <string name="explainButton">Si vous n\'avez pas compris un concept, nous vous l\'expliquerons.</string>
+    <string name="explainButton">Tu as besoin d\'aide?</string>
     <string name="genKeyButton">Je suis déjà familier avec les algorithmes de cryptage.</string>
 
     <!-- Strings used for concept fragments-->
@@ -257,7 +257,7 @@
     <string name="sound">Son lors de la pression sur le clavier</string>
     <string name="vibration">Vibration lors de la frappe sur le clavier</string>
 
-    <string name="mainKeyboard">Définir KeyCip comme clavier principal</string>
+    <string name="mainKeyboard">Définir KeyCip comme clavier </string>
     <string name="tutorialYoutube">N\'oubliez pas que, sur notre chaîne Youtube, vous trouverez des tutoriels sur l\'utilisation du clavier.</string>
     <string name="youtube">Youtube</string>
 
@@ -349,5 +349,9 @@
     <string name="settings">Réglages</string>
 
     <string name="your"> </string>
+    <string name="skip">Aller à</string>
+
+    <string name="maxKeyboard">Taille maximale du texte dépassée</string>
+    <string name="meContact">\"Je\" n\'est pas autorisé comme nom de contact</string>
 
 </resources>

@@ -908,9 +908,12 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:padding="-2dp"
             android:text="!"
+            android:textAllCaps="false"
             android:textStyle="bold"
-            android:visibility="visible" />
+            app:autoSizeTextType="uniform"/>
 
     </LinearLayout>
 

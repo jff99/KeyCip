@@ -66,62 +66,70 @@ class AddedKeyContactFragment : Fragment() {
         addContactButton = root.findViewById(R.id.addContactButton)
 
         addContactButton.setOnClickListener {
+            //Check if the name inserted is equal to me (not allowed)
+            if(nameInserted.text.toString().lowercase() == context?.resources?.getString(R.string.me).toString().lowercase()){
+                Toast.makeText(
+                    this.context,
+                    context?.resources?.getString(R.string.meContact),
+                    Toast.LENGTH_LONG
+                ).show()
+            }
             // Case in which user has not entered anything
-            if (nameInserted.text.toString().isEmpty()) {
+            else if (nameInserted.text.toString().isEmpty()) {
                 Toast.makeText(
                     this.context,
                     context?.resources?.getString(R.string.nameLimitationSize),
                     Toast.LENGTH_LONG
                 ).show()
             }
+            else{
+                // Get the list of user whose name is the one inserted by the user
+                val contactList =
+                    contactDatabase.getContactDao().getContactsByName(nameInserted.text.toString())
+                // If it is empty, it means that there is already a contact whose name is the one inserted (do not add the contact)
+                if (contactList.isNotEmpty()) {
+                    val nameContact = contactList[0].name
+                    Toast.makeText(
+                        this.context,
+                        "${context?.resources?.getString(R.string.repeatedKey)} $nameContact",
+                        Toast.LENGTH_LONG
+                    ).show()
+                } else {
+                    // Save current day in order to save it in the Files Database
+                    val currentTime: Date = Calendar.getInstance().time
+                    val formatDate: DateFormat = SimpleDateFormat("dd/MM/yyyy")
 
-            // Get the list of user whose name is the one inserted by the user
-            val contactList =
-                contactDatabase.getContactDao().getContactsByName(nameInserted.text.toString())
+                    val ruta = (requireContext().filesDir).toString()
 
-            // If it is empt, it means that there is already a contact whose name is the one inserted (do not add the contact)
-            if (contactList.isNotEmpty()) {
-                val nameContact = contactList[0].name
-                Toast.makeText(
-                    this.context,
-                    "${context?.resources?.getString(R.string.nameLimitationSize)} $nameContact",
-                    Toast.LENGTH_LONG
-                ).show()
-            } else {
-                // Save current day in order to save it in the Files Database
-                val currentTime: Date = Calendar.getInstance().time
-                val formatDate: DateFormat = SimpleDateFormat("dd/MM/yyyy")
+                    val insertedContact = ContactEntity(
+                        nameInserted.text.toString(),
+                        "$ruta/keysContact/${nameInserted.text.toString().lowercase()}.cer",
+                        false,
+                        formatDate.format(currentTime.time)
+                    )
 
-                val ruta = (requireContext().filesDir).toString()
+                    //convert the string given to key
+                    RSA().fromStringToPublicKey(
+                        root.context,
+                        pathPublicKey,
+                        nameInserted.text.toString().lowercase()
+                    )
 
-                val insertedContact = ContactEntity(
-                    nameInserted.text.toString(),
-                    "$ruta/keysContact/${nameInserted.text.toString().lowercase()}.cer",
-                    false,
-                    formatDate.format(currentTime.time)
-                )
+                    lifecycleScope.launch {
+                        contactDatabase.getContactDao().insertContact(insertedContact)
+                    }
 
-                //convert the string given to key
-                RSA().fromStringToPublicKey(
-                    root.context,
-                    pathPublicKey,
-                    nameInserted.text.toString().lowercase()
-                )
+                    Toast.makeText(
+                        this.context,
+                        context?.resources?.getString(R.string.addedContact),
+                        Toast.LENGTH_LONG
+                    ).show()
 
-                lifecycleScope.launch {
-                    contactDatabase.getContactDao().insertContact(insertedContact)
+                    val transaction = activity?.supportFragmentManager?.beginTransaction()
+                    val homeFragment = HomeFragment()
+                    transaction?.replace(R.id.fragment_container, homeFragment)
+                    transaction?.commit()
                 }
-
-                Toast.makeText(
-                    this.context,
-                    context?.resources?.getString(R.string.addedContact),
-                    Toast.LENGTH_LONG
-                ).show()
-
-                val transaction = activity?.supportFragmentManager?.beginTransaction()
-                val homeFragment = HomeFragment()
-                transaction?.replace(R.id.fragment_container, homeFragment)
-                transaction?.commit()
             }
         }
 
