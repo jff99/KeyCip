@@ -20,8 +20,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![GNU License][license-shield]][license-url]
+[![Watchers][issues-shield]][issues-url]
 [![Twitter][twitter-shield]][twitter-url]
 [![Youtube][youtube-shield]][youtube-url]
 [![Reddit][reddit-shield]][reddit-url]
@@ -193,9 +192,10 @@ You might feel overwhelmed by the quantity of classes and xml included within th
 <!-- ROADMAP -->
 ## Roadmap
 
+- [ ] Add the app to Fdroid Store
 - [ ] Add encryption and decryption of pictures and files through the keyboard (currently only text)
 - [ ] Add authentication when encrypting and decrypting through the keyboard
-- [ ] Add the possibility to open directly .zip files (instead of browing for it)
+- [ ] Add the possibility to open directly .zip files (instead of browsing for it)
     - [ ] Changing the fragment structure and argument passing
 - [ ] Find a solution to share the private key to another device (not depending on the phone)
 - [ ] iOs version
@@ -282,16 +282,14 @@ Reddit page: [https://www.reddit.com/r/KeyCip/](https://github.com/jff99/KeyCip)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/jff99/KeyCip
 [contributors-url]: https://github.com/jff99/KeyCip//graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/jff99/KeyCip?style=social
 [forks-url]: https://github.com/jff99/KeyCip//network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/jff99/KeyCip?style=social
 [stars-url]: https://github.com/jff99/KeyCip//stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/watchers/jff99/KeyCip?style=social
 [issues-url]: https://github.com/jff99/KeyCip//issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/jff99/KeyCip//blob/master/LICENSE.txt
 [twitter-shield]: https://img.shields.io/twitter/follow/KEyCipApp?style=social
 [twitter-url]: https://twitter.com/KeyCipApp
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
@@ -299,5 +297,5 @@ Reddit page: [https://www.reddit.com/r/KeyCip/](https://github.com/jff99/KeyCip)
 [product-screenshot]: images/screenshot.png
 [youtube-shield]: https://img.shields.io/youtube/channel/subscribers/UCqvsnBVY6Gwq5VKuy6NfLGQ?style=social
 [youtube-url]: https://www.youtube.com/channel/UCqvsnBVY6Gwq5VKuy6NfLGQ
-[reddit-shield]: https://img.shields.io/reddit/subreddit-subscribers/KeyCIp?style=social
+[reddit-shield]: https://img.shields.io/reddit/subreddit-subscribers/KeyCip?style=social
 [reddit-url]: https://www.reddit.com/r/KeyCip/
