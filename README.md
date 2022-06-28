@@ -45,7 +45,7 @@
   </a>
 
   <p align="center">
-    <strong>KeyCip</strong> is an Android app that allows users to encrypt, decrypt and sign text, photos, videos and other files. To accomplish this goal, it relies on both <strong>RSA and AES algorithms.</strong> <strong>Sounds to complicated?</strong> Do not worry the workflow in order to make each one of the operations is a step-by-step process (even Youtube tutorials have beeen created). <strong>KeyCip</strong> has been designed to be as easy as posible, introducing mechanisms suchas as fingerprint authentication or QR code scannig for public key sharing. The most important part is that the whole code is available for the community as an open source project, so do not hesitate to colaborate or request any feature. And remember: <strong>Information belongs to us</strong>
+    <strong>KeyCip</strong> is an Android app that allows users to encrypt, decrypt and sign text, photos, videos and other files. To accomplish this goal, it relies on both <strong>RSA and AES algorithms.</strong> <strong>Sounds to complicated?</strong> Do not worry the workflow in order to make each one of the operations is a step-by-step process (even Youtube tutorials have beeen created). <strong>KeyCip</strong> has been designed to be as easy as posible, introducing mechanisms such as fingerprint authentication or QR code scannig for public key sharing. The most important part is that the whole code is available for the community as an open source project, so do not hesitate to colaborate or request any feature. And remember: <strong>Information belongs to us</strong>
     <br />
     <a href="https://github.com/jff99/KeyCip"><strong>Explore the docs »</strong></a>
     <br />
