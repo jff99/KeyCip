@@ -19,6 +19,7 @@
 
 package jorgeff99.keymyinfo
 
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import jorgeff99.keymyinfo.common.Application
@@ -30,6 +31,11 @@ class PermissionActivity : AppCompatActivity() {
         //Saves the last entire process done (so that when the app launchs again, this step of the tutorial is finished)
         Application.sharedPreferences.saveInt("genKey", 0)
         super.onCreate(savedInstanceState)
+        when (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
+            Configuration.UI_MODE_NIGHT_YES -> {
+                window.navigationBarColor = getResources().getColor(R.color.backgroundDark)
+            }
+        }
         setContentView(R.layout.activity_permission)
 
         if(savedInstanceState == null){

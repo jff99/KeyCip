@@ -22,6 +22,7 @@
 package jorgeff99.keymyinfo
 
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -30,6 +31,11 @@ class SplashActivity : AppCompatActivity() {
     lateinit var handler: Handler
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        when (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
+            Configuration.UI_MODE_NIGHT_YES -> {
+                window.navigationBarColor = getResources().getColor(R.color.backgroundDark)
+            }
+        }
         setContentView(R.layout.activity_splash)
         handler = Handler()
         handler.postDelayed({

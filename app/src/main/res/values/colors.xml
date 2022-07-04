@@ -30,5 +30,7 @@
     <color name="greyDarkMode">#333333</color>
     <color name="green">#4CAF50</color>
     <color name="commonGrey">#4C4C4C</color>
+    <color name="backgroundDark">#121212</color>
+    <color name="navbarDark">#2d2d2d</color>
 
 </resources>

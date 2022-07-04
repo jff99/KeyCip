@@ -29,5 +29,7 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:title">@color/white</item>
+        <item name="colorPrimaryDark">@color/backgroundDark</item>
+        <item name="android:navigationBarColor">@color/navbarDark</item>
     </style>
 </resources>

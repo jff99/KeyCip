@@ -19,22 +19,26 @@
 
 package jorgeff99.keymyinfo
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.res.Configuration
 import android.os.Bundle
-import android.text.Html
-import android.text.Html.FROM_HTML_MODE_LEGACY
-import android.text.Html.fromHtml
+import androidx.annotation.ColorInt
+import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
-import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
 
 class ConceptActivity : AppCompatActivity() {
 
-    //Attribute to represent the viewpager View containig the questions and answer of the tutorial
+    //Attribute to represent the viewpager View containing the questions and answer of the tutorial
     private lateinit var viewPager2: ViewPager2
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        when (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
+            Configuration.UI_MODE_NIGHT_YES -> {
+                window.navigationBarColor = getResources().getColor(R.color.backgroundDark)
+            }
+        }
+
         setContentView(R.layout.activity_concept)
 
         // List containing all the question of the tutorial

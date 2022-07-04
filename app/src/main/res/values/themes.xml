@@ -29,6 +29,9 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:title">@color/black</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
     <style name="Theme.KeyCip.NoActionBar">
         <item name="windowActionBar">false</item>

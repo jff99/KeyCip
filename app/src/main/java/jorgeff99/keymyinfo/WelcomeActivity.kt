@@ -19,6 +19,7 @@
 
 package jorgeff99.keymyinfo
 
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import jorgeff99.keymyinfo.fragments.tutorial.WelcomeFragment
@@ -26,6 +27,11 @@ import jorgeff99.keymyinfo.fragments.tutorial.WelcomeFragment
 class WelcomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        when (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
+            Configuration.UI_MODE_NIGHT_YES -> {
+                window.navigationBarColor = getResources().getColor(R.color.backgroundDark)
+            }
+        }
         setContentView(R.layout.activity_welcome)
 
         if(savedInstanceState == null){
