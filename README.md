@@ -31,14 +31,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/jff99/KeyCip">
     <img src="images/logo.png" alt="Logo" width="70" height="80">
   </a>
 
 <h3 align="center">KeyCip</h3>
+ <a href="https://play.google.com/store/apps/details?id=jorgeff99.keymyinfo">
+    <img src="images/Play Store.png" alt="Play Store" width="200" height="80">
+  </a>
+
+   <a href="https://apt.izzysoft.de/fdroid/index/apk/jorgeff99.keymyinfo">
+    <img src="images/IzzyOnDroid.png" alt="Logo" width="200" height="80">
+  </a>
 
   <p align="center">
-    <strong>KeyCip</strong> is an Android app that allows users to encrypt, decrypt and sign text, photos, videos and other files. To accomplish this goal, it relies on both <strong>RSA and AES algorithms.</strong> <strong>Sounds to complicated?</strong> Do not worry the workflow in order to make each one of the operations is a step-by-step process (even Youtube tutorials have beeen created). <strong>KeyCip</strong> has been designed to be as easy as posible, introducing mechanisms suchas as fingerprint authentication or QR code scannig for public key sharing. The most important part is that the whole code is available for the community as an open source project, so do not hesitate to colaborate or request any feature. And remember: <strong>Information belongs to us</strong>
+    <strong>KeyCip</strong> is an Android app that allows users to encrypt, decrypt and sign text, photos, videos and other files. To accomplish this goal, it relies on both <strong>RSA and AES algorithms.</strong> <strong>Sounds to complicated?</strong> Do not worry the workflow in order to make each one of the operations is a step-by-step process (even Youtube tutorials have beeen created). <strong>KeyCip</strong> has been designed to be as easy as posible, introducing mechanisms such as fingerprint authentication or QR code scannig for public key sharing. The most important part is that the whole code is available for the community as an open source project, so do not hesitate to colaborate or request any feature. And remember: <strong>Information belongs to us</strong>
     <br />
     <a href="https://github.com/jff99/KeyCip"><strong>Explore the docs »</strong></a>
     <br />
@@ -192,7 +199,7 @@ You might feel overwhelmed by the quantity of classes and xml included within th
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Add the app to Fdroid Store
+- [x] Add the app to Fdroid Store
 - [ ] Add encryption and decryption of pictures and files through the keyboard (currently only text)
 - [ ] Add authentication when encrypting and decrypting through the keyboard
 - [ ] Add the possibility to open directly .zip files (instead of browsing for it)
